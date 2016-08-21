@@ -1,0 +1,25 @@
+package acadglid;
+import java.util.Scanner;
+
+public class primen {
+public static void main(String[] args){
+	int x;
+	boolean isPrime=true;
+	Scanner acad= new Scanner(System.in);
+	System.out.println("Enter a number :");
+	int number=acad.nextInt();
+	for(int i=2;i<=number/2;i++)
+	{
+           x=number%i;
+	   if(x==0)
+	   {
+	      isPrime=false;
+	      break;
+	   }
+	}
+	if(isPrime)
+	   System.out.println(number + " is Prime Number");
+	else
+	   System.out.println(number + " is not Prime Number");
+}
+}
